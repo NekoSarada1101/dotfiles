@@ -10,9 +10,10 @@ for f in .??*; do
     [ "$f" = ".gitconfig.local.template" ] && continue
     [ "$f" = ".require_oh-my-zsh" ] && continue
     [ "$f" = ".gitmodules" ] && continue
+    [ "$f" = ".gitignore" ] && continue
 
     # シンボリックリンクを貼る
     ln -snfv ${PWD}/"$f" ~/
 done
 
-echo "end"
+echo "Complete!"
