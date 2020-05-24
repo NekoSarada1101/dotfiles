@@ -10,8 +10,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
 ########################################
+
+# Customize to your needs...
+
+# 少し凝った zshrc
+# License : MIT
+# http://mollifier.mit-license.org/
+
 # 環境変数
 export LANG=ja_JP.UTF-8
 
@@ -189,7 +195,6 @@ elif which putclip >/dev/null 2>&1 ; then
 fi
 
 
-
 ########################################
 # OS 別の設定
 case ${OSTYPE} in
@@ -206,6 +211,7 @@ esac
 
 # vim:set ft=zsh:
 
+
 ########################################
 # peco settings
 # 過去に実行したコマンドを選択。ctrl-rにバインド
@@ -217,7 +223,8 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
-### 過去に移動したことのあるディレクトリを選択。ctrl-uにバインド
+
+# 過去に移動したことのあるディレクトリを選択。ctrl-uにバインド
 # cdr
 if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
     autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
@@ -237,6 +244,7 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 bindkey '^u' peco-cdr
+
 
 ########################################
 # その他

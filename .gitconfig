@@ -14,11 +14,3 @@
 	editor = code --wait
 	quotepath = false
 	excludesfile = /Users/ryo/.gitignore_global
-[alias]
-	st = status
-	df = diff
-	co = commit
-	br = branch
-	ps = push
-	pl = pull
-	ck = checkout
