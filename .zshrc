@@ -1,1 +1,0 @@
-/Users/ryo/.zprezto/runcoms/zshrc
