@@ -1,9 +1,9 @@
 name: macos
 
 on:
-	push:
-		branches:
-			- master
+    push:
+        branches:
+            - master
 
 jobs:
   macos-test:
