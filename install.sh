@@ -1,3 +1,5 @@
+set -e
+
 # 今のディレクトリ
 # dotfilesディレクトリに移動する
 cd ~/dotfiles
