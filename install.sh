@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -xeu
 
 echo "start setup..."
 
