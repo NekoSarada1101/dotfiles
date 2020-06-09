@@ -1,9 +1,5 @@
 set -e
 
-# 今のディレクトリ
-# dotfilesディレクトリに移動する
-cd ~/dotfiles
-
 echo "start setup..."
 
 # dotfilesディレクトリにある、ドットから始まり2文字以上の名前のファイルに対して
