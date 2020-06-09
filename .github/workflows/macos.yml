@@ -15,6 +15,7 @@ jobs:
 
     -name: Run homebrew_install.sh
      run:  source homebrew_install.sh
+     working-directory: /dotfiles
      
     -name: Load .zshrc
      run: zsh ~/.zshrc 2> error.log; cat error.log
