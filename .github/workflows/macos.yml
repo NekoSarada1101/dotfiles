@@ -11,11 +11,14 @@ jobs:
 
     steps:
     - name: Run install.sh
-      run: source ${GITHUB_WORKSPACE}/install.sh
+      run: ./install.sh
+      working-directory: ./dotfiles
     
     - name: Run homebrew_install.sh
-      run: source ${GITHUB_WORKSPACE}/homebrew_install.sh
+      run: ./homebrew_install.sh
+      working-directory: ./dotfiles
     
     - name: Load .zshrc
       run: zsh ~/.zshrc 2> error.log; cat error.log
            if [ -s error.log ]; then false; fi
+      working-directory: ./dotfiles
