@@ -22,6 +22,6 @@ source homebrew_install.sh
 
 6. [brewletをインストール](https://github.com/zkokaja/Brewlet)
 
-7.[PhishWallクライアントをインストール](https://www.securebrain.co.jp/products/phishwall/install_mac.html)
+7. [PhishWallクライアントをインストール](https://www.securebrain.co.jp/products/phishwall/install_mac.html)
 
-8. カスペルキー のセットアップ
+8. [カスペルキーのセットアップ](https://home.kaspersky.co.jp/store/kasperjp/DisplayHomePage?icid=jp_ng-thmb_pro_ona_oth__onl_b2c__buttn_______)
