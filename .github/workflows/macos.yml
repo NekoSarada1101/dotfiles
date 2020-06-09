@@ -12,8 +12,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    -name: Run install.sh
-     run: source ../../install.sh
+#     -name: Run install.sh
+#      run: source ../../install.sh
 
     -name: Run homebrew_install.sh
      run:  source ../../homebrew_install.sh
