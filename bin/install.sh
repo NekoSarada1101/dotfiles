@@ -25,4 +25,4 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-echo -e "\e[33;1mComplete!\e[m"
+echo -e "\e[32;1mComplete!\e[m"

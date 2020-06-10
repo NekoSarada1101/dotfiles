@@ -4,7 +4,7 @@
 defaults write com.apple.finder AppleShowAllFiles TRUE
 
 # Command Line Tools
-echo "Command Line Tools for Xcode install"
+echo -e "\e[36;1mCommand Line Tools for Xcode install\e[m"
 xcode-select --install
 
 # homebrew
@@ -17,4 +17,4 @@ brew doctor
 echo -e "\e[36;1mrun brew update...\e[m"
 brew update
 
-echo -e "\e[33;1mComplete homebrew install\e[m"
+echo -e "\e[32;1mComplete homebrew install\e[m"
