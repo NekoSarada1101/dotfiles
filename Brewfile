@@ -48,7 +48,7 @@ cask "google-drive"
 cask "intellij-idea"
 cask "iterm2"
 cask "jetbrains-toolbox"
-cask "kindle
+cask "kindle"
 cask "malwarebytes"
 cask "mamp"
 cask "slack"
