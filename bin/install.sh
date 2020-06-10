@@ -1,7 +1,7 @@
 #!/bin/zsh
 set -xeu
 
-echo "start setup..."
+echo -e "\e[36;1mstart setup...\e[m"
 
 # dotfilesディレクトリにある、ドットから始まり2文字以上の名前のファイルに対して
 for f in .??*; do
@@ -25,4 +25,4 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-echo "Complete!"
+echo -e "\e[33;1mComplete!\e[m"

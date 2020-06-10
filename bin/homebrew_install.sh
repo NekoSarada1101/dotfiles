@@ -8,18 +8,13 @@ echo "Command Line Tools for Xcode install"
 xcode-select --install
 
 # homebrew
-echo "installing homebrew..."
+echo -e "\e[36;1minstalling homebrew...\e[m"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-echo "run brew doctor..."
+echo -e "\e[36;1mrun brew doctor...\e[m"
 brew doctor
 
-echo "run brew update..."
+echo -e "\e[36;1mrun brew update...\e[m"
 brew update
 
-echo "Complete homebrew install"
-
-echo "installing Brewfile..."
-brew bundle
-
-echo "Complete Brewfile install"
+echo -e "\e[33;1mComplete homebrew install\e[m"
