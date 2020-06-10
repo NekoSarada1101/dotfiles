@@ -59,16 +59,14 @@ cask "tableplus"
 cask "visual-studio-code"
 cask "1password"
 
-<< COMMENTOUT
-mas "Amphetamine", id: 937984704
-mas "Battery Monitor", id: 836505650
-mas "Bear", id: 1091189122
-mas "BetterSnapTool", id: 417375580
-mas "LINE", id: 539883307
-mas "RunCat", id: 1429033973
-mas "Snap", id: 418073146
-mas "The Unarchiver", id: 425424353
-mas "Trello", id: 1278508951
-mas "Twitter", id: 1482454543
-mas "Yoink", id: 457622435
-COMMENTOUT
+# mas "Amphetamine", id: 937984704
+# mas "Battery Monitor", id: 836505650
+# mas "Bear", id: 1091189122
+# mas "BetterSnapTool", id: 417375580
+# mas "LINE", id: 539883307
+# mas "RunCat", id: 1429033973
+# mas "Snap", id: 418073146
+# mas "The Unarchiver", id: 425424353
+# mas "Trello", id: 1278508951
+# mas "Twitter", id: 1482454543
+# mas "Yoink", id: 457622435
