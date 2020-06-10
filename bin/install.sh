@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 set -xeu
 
 echo "start setup..."
