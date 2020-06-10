@@ -19,6 +19,10 @@ jobs:
     - name: Run homebrew_install.sh
       run: ${GITHUB_WORKSPACE}/bin/homebrew_install.sh
       working-directory: .
+
+    - name: Run brew  bundle
+      run: brew  bundle ${GITHUB_WORKSPACE}/Brewfile
+      working-directory: .
     
     - name: Load .zshrc
       run: zsh ~/.zshrc 2> error.log; cat error.log
