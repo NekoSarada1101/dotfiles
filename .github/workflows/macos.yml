@@ -21,7 +21,7 @@ jobs:
       working-directory: .
 
     - name: Run brew  bundle
-      run: brew  bundle ${GITHUB_WORKSPACE}/Brewfile
+      run: brew bundle
       working-directory: .
     
     - name: Load .zshrc
