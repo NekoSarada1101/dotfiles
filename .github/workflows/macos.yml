@@ -10,12 +10,14 @@ jobs:
     runs-on: macos-latest
 
     steps:
+    - uses: actions/checkout@v2
+
     - name: Run install.sh
-      run: ./install.sh
+      run: ${GITHUB_WORKSPACE}/bin/install.sh
       working-directory: .
     
     - name: Run homebrew_install.sh
-      run: ./homebrew_install.sh
+      run: ${GITHUB_WORKSPACE}/bin/homebrew_install.sh
       working-directory: .
     
     - name: Load .zshrc
