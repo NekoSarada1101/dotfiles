@@ -195,41 +195,7 @@ esac
 
 
 ########################################
-# peco settings
-# 過去に実行したコマンドを選択。ctrl-rにバインド
-function peco-select-history() {
-  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^r' peco-select-history
-
-
-# 過去に移動したことのあるディレクトリを選択。ctrl-uにバインド
-# cdr
-if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
-    autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
-    add-zsh-hook chpwd chpwd_recent_dirs
-    zstyle ':completion:*' recent-dirs-insert both
-    zstyle ':chpwd:*' recent-dirs-default true
-    zstyle ':chpwd:*' recent-dirs-max 1000
-    zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs"
-fi
-
-function peco-cdr () {
-    local selected_dir="$(cdr -l | sed 's/^[0-9]\+ \+//' | peco --prompt="cdr >" --query "$LBUFFER")"
-    if [ -n "$selected_dir" ]; then
-        BUFFER="cd ${selected_dir:5}"
-        zle accept-line
-    fi
-}
-zle -N peco-cdr
-bindkey '^u' peco-cdr
-
-
-########################################
-# その他
+# PATH
 # zsh-completions
 fpath=(path/to/zsh-completions/src $fpath)
 
@@ -243,3 +209,77 @@ eval "$(starship init zsh)"
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
+
+
+########################################
+# zinit
+### Added by Zinit's installer
+if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
+    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+        print -P "%F{160}▓▒░ The clone has failed.%f%b"
+fi
+
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zinit-zsh/z-a-rust \
+    zinit-zsh/z-a-as-monitor \
+    zinit-zsh/z-a-patch-dl \
+    zinit-zsh/z-a-bin-gem-node
+
+### End of Zinit's installer chunk
+
+
+# 補完を更に強化する
+# pacman や yaourt のパッケージリストも補完するようになる
+zinit light "zsh-users/zsh-completions"
+
+# 補完
+zinit light zsh-users/zsh-autosuggestions
+
+# シンタックスハイライト
+zinit light zdharma/fast-syntax-highlighting
+
+# anyframeのセットアップ
+zinit light mollifier/anyframe
+
+# Ctrl+u
+# peco でディレクトリの移動履歴を表示
+bindkey '^u' anyframe-widget-cdr
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+add-zsh-hook chpwd chpwd_recent_dirs
+
+# Ctrl+r
+# peco でコマンドの実行履歴を表示
+bindkey '^r' anyframe-widget-execute-history
+
+# Ctrl+b
+# peco でGitブランチを表示して切替え
+bindkey '^b' anyframe-widget-checkout-git-branch
+
+# Gitの変更状態がわかる ls。ls の代わりにコマンド `k` を実行するだけ。
+zinit light supercrabtree/k
+
+# 作業中のGitのルートディレクトリまでジャンプするコマンドを定義するプラグインです。
+# cd-gitroot コマンドをエイリアスで U に割り当てています。
+zinit light 'mollifier/cd-gitroot'
+
+# コマンド入力途中で上下キー押したときの過去履歴がいい感じに出るようになる
+zinit light "zsh-users/zsh-history-substring-search"
+
+# 256色表示にする
+zinit light "zsh-users/zsh-completions"
+
+# prezto
+# cdのディレクトリ保管の背景色表示
+zinit snippet PZT::modules/utility/init.zsh
+zinit snippet PZT::modules/completion/init.zsh
+
+zinit snippet PZT::modules/directory/init.zsh
