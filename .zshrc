@@ -29,14 +29,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
-# プロンプト
-# 1行表示
-# PROMPT="%~ %# "
-# 2行表示
-# PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
-# %# "
-
-
 # 単語の区切り文字を指定する
 autoload -Uz select-word-style
 select-word-style default
@@ -121,11 +113,6 @@ setopt hist_reduce_blanks
 # 高機能なワイルドカード展開を使用する
 setopt extended_glob
 
-########################################
-# キーバインド
-
-# ^R で履歴検索をするときに * でワイルドカードを使用出来るようにする
-bindkey '^R' history-incremental-pattern-search-backward
 
 ########################################
 # エイリアス
