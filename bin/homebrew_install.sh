@@ -1,5 +1,5 @@
 #!/bin/zsh
-set -xeu
+set -xu
 
 #先にApp storeにログインしておく
 
@@ -7,8 +7,8 @@ set -xeu
 defaults write com.apple.finder AppleShowAllFiles TRUE
 
 # Command Line Tools
-# echo -e "\e[36;1mCommand Line Tools for Xcode install\e[m"
-# xcode-select --install
+echo -e "\e[36;1mCommand Line Tools for Xcode install\e[m"
+xcode-select --install
 
 # homebrew
 echo -e "\e[36;1mInstalling homebrew...\e[m"
