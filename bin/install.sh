@@ -1,7 +1,7 @@
 #!/bin/zsh
 set -xeu
 
-echo -e "\e[36;1mstart setup...\e[m"
+echo -e "\e[36;1mStart setup...\e[m"
 
 # dotfilesディレクトリにある、ドットから始まり2文字以上の名前のファイルに対して
 for f in .??*; do
