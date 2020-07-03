@@ -1,4 +1,4 @@
-![](https://github.com/Sarada1101/dotfiles/workflows/macos.yml/badge.svg)
+![macos](https://github.com/Sarada1101/dotfiles/workflows/macos/badge.svg)
 # dotfiles
 
 1. masを使うためにApp Storeにログインしておく
