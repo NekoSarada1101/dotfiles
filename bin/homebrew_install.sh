@@ -3,12 +3,12 @@ set -xeu
 
 #先にApp storeにログインしておく
 
-# 蒸しファイルを可視化する（再起動したら見える）
+# 隠しファイルを可視化する（再起動したら見える）
 defaults write com.apple.finder AppleShowAllFiles TRUE
 
 # Command Line Tools
-echo -e "\e[36;1mCommand Line Tools for Xcode install\e[m"
-xcode-select --install
+# echo -e "\e[36;1mCommand Line Tools for Xcode install\e[m"
+# xcode-select --install
 
 # homebrew
 echo -e "\e[36;1mInstalling homebrew...\e[m"
