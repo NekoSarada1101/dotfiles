@@ -15,14 +15,4 @@ for f in .??*; do
     ln -snfv ${PWD}/"$f" ~/
 done
 
-# prezto install
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-   [ "$rcfile" = "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ] && continue
-
-   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
-
 echo -e "\e[32;1mComplete!\e[m"
