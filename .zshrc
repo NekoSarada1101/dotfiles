@@ -113,7 +113,7 @@ alias ka='k -a'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias icloud='cd Library/Mobile\ Documents/com\~apple\~CloudDocs'
+alias icloud='cd /Users/ryo/Library/Mobile Documents/com~apple~CloudDocs'
 
 # git系
 alias g='git'
