@@ -103,7 +103,6 @@ setopt extended_glob
 
 # ls系
 alias ls='exa'
-alias la='exa -a'
 alias ll='exa -alh'
 
 # cd系
