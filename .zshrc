@@ -104,6 +104,10 @@ setopt extended_glob
 # ls系
 alias ls='exa'
 alias ll='exa -alh'
+alias lT='exa -T'
+alias laT='exa -aT'
+
+alias ka='k -a'
 
 # cd系
 alias ..='cd ..'
