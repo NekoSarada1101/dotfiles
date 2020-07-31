@@ -14,3 +14,13 @@
 	editor = code --wait
 	quotepath = false
 	excludesfile = /Users/ryo/.gitignore_global
+[merge]
+        tool = vscode
+[mergetool]
+        prompt = false
+        keepBackup = false
+[mergetool "vscode"]
+        # cmd = 'VSCodeのパス' \"$MERGED\"
+        # 例：Macの場合
+        cmd = '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' \"$MERGED\"
+        trustExitCode = false
