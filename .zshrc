@@ -103,6 +103,7 @@ setopt extended_glob
 
 # ls系
 alias ls='exa'
+alias la='exa -a'
 alias ll='exa -alh'
 alias lT='exa -T'
 alias laT='exa -aT'
@@ -113,7 +114,7 @@ alias ka='k -a'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias icloud='cd /Users/ryo/Library/Mobile Documents/com~apple~CloudDocs'
+alias icloud='cd /Users/ryo/Library/"Mobile Documents"/com~apple~CloudDocs'
 
 # git系
 alias g='git'
