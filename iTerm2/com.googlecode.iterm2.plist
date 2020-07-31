@@ -802,7 +802,7 @@
 				<real>1</real>
 			</dict>
 			<key>Blend</key>
-			<real>0.49280227229546658</real>
+			<real>0.51900837732123983</real>
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
@@ -1594,7 +1594,7 @@
 			<key>Title Components</key>
 			<integer>3</integer>
 			<key>Transparency</key>
-			<real>0.11283907043147215</real>
+			<real>0.15929171954314728</real>
 			<key>Unicode Normalization</key>
 			<integer>0</integer>
 			<key>Unlimited Scrollback</key>
@@ -1664,7 +1664,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>923942D3-2332-4FEB-8066-86CBE3CD1AA0</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>261</integer>
+	<integer>273</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586946686.23212695</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2465,7 +2465,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-07T12:03:47Z</date>
+	<date>2020-07-30T12:06:22Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
