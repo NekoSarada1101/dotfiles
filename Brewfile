@@ -24,7 +24,6 @@ brew "postgresql", restart_service: true
 brew "procs"
 brew "qt"
 brew "starship"
-brew "tig"
 brew "zsh"
 brew "zsh-completions"
 brew "dbcli/tap/litecli"
