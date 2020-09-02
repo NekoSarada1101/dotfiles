@@ -1,28 +1,39 @@
 ![macos](https://github.com/Sarada1101/dotfiles/workflows/macos/badge.svg)
+
 # dotfiles
 
-1. masを使うためにApp Storeにログインしておく
+1. mas を使うために App Store にログインしておく
 
-2. 旧PCから.sshファイルを新PCに移す
+2. 旧 PC から.ssh ファイルを新 PC に移す
 
-3. dotfilesリポジトリをcloneする
+3. dotfiles リポジトリを clone する
+
 ```
-cd
+cd ~
 git clone git@github.com:Sarada1101/dotfiles.git
 ```
 
-4. install.shを実行しシンボリックリンクを貼る
+4. install.sh を実行しシンボリックリンクを貼る
+
 ```
 dotfiles/install.sh
 ```
 
-5. homebrew_install.shを実行し、homebrewパッケージなどをインストールする
+5. homebrew_install.sh を実行し、homebrew パッケージなどをインストールする
+
 ```
 dotfiles/homebrew_install.sh
 ```
 
-6. [brewletをインストール](https://github.com/zkokaja/Brewlet)
+6. brew bundle で Brewfile を読み込む
 
-7. [PhishWallクライアントをインストール](https://www.securebrain.co.jp/products/phishwall/install_mac.html)
+```
+cd dotfiles
+brew bundle
+```
 
-8. [カスペルキーのセットアップ](https://home.kaspersky.co.jp/store/kasperjp/DisplayHomePage?icid=jp_ng-thmb_pro_ona_oth__onl_b2c__buttn_______)
+7. [brewlet をインストール](https://github.com/zkokaja/Brewlet)
+
+8. [PhishWall クライアントをインストール](https://www.securebrain.co.jp/products/phishwall/install_mac.html)
+
+9. [カスペルキーのセットアップ](https://home.kaspersky.co.jp/store/kasperjp/DisplayHomePage?icid=jp_ng-thmb_pro_ona_oth__onl_b2c__buttn_______)
