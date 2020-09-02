@@ -271,3 +271,9 @@ zinit snippet PZT::modules/utility/init.zsh
 zinit snippet PZT::modules/completion/init.zsh
 
 zinit snippet PZT::modules/directory/init.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ryo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ryo/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ryo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ryo/google-cloud-sdk/completion.zsh.inc'; fi
