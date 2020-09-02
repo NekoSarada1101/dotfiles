@@ -20,4 +20,4 @@ brew doctor
 echo -e "\e[36;1mRun brew update...\e[m"
 brew update
 
-echo -e "\e[32;1mComplete homebrew install\e[m"
+echo -e "\e[32;1mComplete homebrew install!\e[m"
