@@ -66,6 +66,7 @@ cask "xrg"
 # mas "Battery Monitor", id: 836505650
 # mas "Bear", id: 1091189122
 # mas "BetterSnapTool", id: 417375580
+# mas "Git Streaks", id: 1525795950
 # mas "HotKey", id: 975890633
 # mas "LINE", id: 539883307
 # mas "RunCat", id: 1429033973
