@@ -8,7 +8,6 @@ tap "jesseduffield/lazygit"
 
 brew "anyenv"
 brew "bat"
-brew "sqlite"
 brew "cask"
 brew "exa"
 brew "fd"
@@ -19,23 +18,21 @@ brew "mas"
 brew "nkf"
 brew "nodebrew"
 brew "pastel"
-brew "pgcli"
-brew "postgresql", restart_service: true
 brew "procs"
 brew "qt"
 brew "starship"
 brew "zsh"
 brew "zsh-completions"
-brew "dbcli/tap/litecli"
 brew "jesseduffield/lazygit/lazygit"
 
-cask "adobe-acrobat-reader"
+cask "1password"
 cask "alfred"
 cask "appcleaner"
 cask "bettertouchtool"
 cask "blackhole"
 cask "clipy"
 cask "coteditor"
+cask "dash"
 cask "dropbox"
 cask "editaro"
 cask "font-fira-code"
@@ -52,24 +49,23 @@ cask "jetbrains-toolbox"
 cask "kindle"
 cask "malwarebytes"
 cask "mamp"
-cask "slack"
+cask "microsoft-office"
+cask "parallels"
 cask "skitch"
-cask "spark"
+cask "slack"
 cask "steam"
-cask "tableplus"
 cask "virtualbox"
 cask "visual-studio-code"
-cask "1password"
-cask "xrg"
+# cask "xrg"
 
 # mas "Amphetamine", id: 937984704
 # mas "Battery Monitor", id: 836505650
 # mas "Bear", id: 1091189122
 # mas "BetterSnapTool", id: 417375580
-# mas "Git Streaks", id: 1525795950
 # mas "HotKey", id: 975890633
 # mas "LINE", id: 539883307
 # mas "RunCat", id: 1429033973
+# mas "spark-メールアプリ-by-readdle", id: 1176895641
 # mas "The Unarchiver", id: 425424353
 # mas "Twitter", id: 1482454543
 # mas "Yoink", id: 457622435
