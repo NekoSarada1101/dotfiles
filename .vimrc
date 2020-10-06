@@ -37,6 +37,9 @@ nnoremap j gj
 nnoremap k gk
 " シンタックスハイライトの有効化
 syntax enable
+" カラースキーム
+autocmd ColorScheme *  highlight LineNr ctermfg=7
+colorscheme iceberg
 
 
 " Tab系
