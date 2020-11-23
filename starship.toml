@@ -11,3 +11,18 @@ truncate_to_repo = false
 
 [nodejs]
 disabled = true
+
+[java]
+disabled = true
+
+[ruby]
+disabled = true
+
+[python]
+disabled = true
+
+[php]
+disabeld = true
+
+[gcloud]
+disabled = true
