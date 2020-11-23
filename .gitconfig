@@ -19,7 +19,7 @@
     ci = "commit"
     ca = "commit -a"
     ps = "push"
-    pl = "pull origin $(git rev-parse --abbrev-ref HEAD)"
+    pl = "pull"
     st = "status"
     br = "branch"
     ba = "branch -a"
