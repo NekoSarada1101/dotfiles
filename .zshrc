@@ -97,90 +97,7 @@ setopt hist_reduce_blanks
 # 高機能なワイルドカード展開を使用する
 setopt extended_glob
 
-
-########################################
-# エイリアス
-
-# ls系
-alias ls='exa'
-alias la='exa -a'
-alias ll='exa -alh'
-alias lT='exa -T'
-alias laT='exa -aT'
-
-alias ka='k -a'
-
-# cd系
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias icloud='cd /Users/ryo/Library/"Mobile Documents"/com~apple~CloudDocs'
-
-# git系
-alias g='git'
-alias ga='git add'
-alias gd='git diff'
-alias gs='git status'
-alias gp='git push'
-alias gb='git branch'
-alias gco='git checkout'
-alias gpl='git pull'
-alias gc='git commit'
-
-# cat系
-alias cat='bat'
-
-# mkdir系
-alias mkdir='mkdir -p'
-
-# open系
-alias op='open'
-
-# 安全策
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
-# 普段は使わない
-# alias sl='sl'
-
-# sudo の後のコマンドでエイリアスを有効にする
-alias sudo='sudo '
-
-# グローバルエイリアス
-alias -g L='| less'
-alias -g G='| grep'
-
-# C で標準出力をクリップボードにコピーする
-# mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
-if which pbcopy >/dev/null 2>&1 ; then
-    # Mac
-    alias -g C='| pbcopy'
-elif which xsel >/dev/null 2>&1 ; then
-    # Linux
-    alias -g C='| xsel --input --clipboard'
-elif which putclip >/dev/null 2>&1 ; then
-    # Cygwin
-    alias -g C='| putclip'
-fi
-
-
-########################################
-# OS 別の設定
-case ${OSTYPE} in
-    darwin*)
-        #Mac用の設定
-        export CLICOLOR=1
-        alias ls='exa -FG' #ls='ls -G -F'
-        ;;
-    linux*)
-        #Linux用の設定
-        alias ls='ls -F --color=auto'
-        ;;
-esac
-
 # vim:set ft=zsh:
-
 
 ########################################
 # PATH
@@ -279,3 +196,84 @@ if [ -f '/Users/ryo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ryo/google-
 if [ -f '/Users/ryo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ryo/google-cloud-sdk/completion.zsh.inc'; fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+########################################
+# エイリアス
+
+# ls系
+alias ls='exa'
+alias la='exa -a'
+alias ll='exa -lh'
+alias lla='exa -alh'
+alias lT='exa -T'
+alias laT='exa -aT'
+
+alias ka='k -a'
+
+# cd系
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias icloud='cd /Users/ryo/Library/"Mobile Documents"/com~apple~CloudDocs'
+
+# git系
+alias g='git'
+
+# cat系
+alias cat='bat'
+
+# mkdir系
+alias mkdir='mkdir -p'
+
+# open系
+alias op='open'
+
+# 安全策
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# lazygit
+alias lg='lazygit'
+
+# 普段は使わない
+# alias sl='sl'
+
+# sudo の後のコマンドでエイリアスを有効にする
+alias sudo='sudo '
+
+# グローバルエイリアス
+alias -g L='| less'
+alias -g G='| grep'
+
+# C で標準出力をクリップボードにコピーする
+# mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
+if which pbcopy >/dev/null 2>&1 ; then
+    # Mac
+    alias -g C='| pbcopy'
+elif which xsel >/dev/null 2>&1 ; then
+    # Linux
+    alias -g C='| xsel --input --clipboard'
+elif which putclip >/dev/null 2>&1 ; then
+    # Cygwin
+    alias -g C='| putclip'
+fi
+
+
+########################################
+# # OS 別の設定
+# case ${OSTYPE} in
+#     darwin*)
+#         #Mac用の設定
+#         export CLICOLOR=1
+#         alias ls='exa -FG' #ls='ls -G -F'
+#         ;;
+#     linux*)
+#         #Linux用の設定
+#         alias ls='ls -F --color=auto'
+#         ;;
+
+# if (which zprof > /dev/null 2>&1) ;then
+#   zprof
+# fi
+# esac
