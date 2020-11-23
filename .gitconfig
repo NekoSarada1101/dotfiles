@@ -1,6 +1,11 @@
 [user]
     email = ryoyukikazu11@gmail.com
     name = Sarada1101
+[core]
+    editor = vim
+    quotepath = false
+    excludesfile = /Users/ryo/.gitignore_global
+    ignorecase = false
 [color]
     diff = auto
     status = auto
@@ -10,10 +15,6 @@
     log = diff-highlight | less
     show = diff-highlight | less
     diff = diff-highlight | less
-[core]
-	editor = code --wait
-	quotepath = false
-	excludesfile = /Users/ryo/.gitignore_global
 [merge]
         tool = vscode
 [mergetool]
