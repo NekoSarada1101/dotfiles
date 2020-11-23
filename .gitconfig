@@ -11,12 +11,14 @@
     status = auto
     branch = auto
     ui = auto
+[push]
+    default = simple
 [alias]
     d = "diff"
     co = "checkout"
     ci = "commit"
     ca = "commit -a"
-    ps = "push origin $(git rev-parse --abbrev-ref HEAD)"
+    ps = "push"
     pl = "pull origin $(git rev-parse --abbrev-ref HEAD)"
     st = "status"
     br = "branch"
