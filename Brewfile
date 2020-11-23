@@ -11,15 +11,13 @@ brew "bat"
 brew "cask"
 brew "exa"
 brew "fd"
-brew "ffmpeg"
+brew "gh"
 brew "gibo"
 brew "git"
+brew "htop"
 brew "mas"
-brew "nkf"
 brew "nodebrew"
-brew "pastel"
 brew "procs"
-brew "qt"
 brew "starship"
 brew "zsh"
 brew "zsh-completions"
@@ -29,43 +27,39 @@ cask "1password"
 cask "alfred"
 cask "appcleaner"
 cask "bettertouchtool"
+cask "biscuit"
 cask "blackhole"
 cask "clipy"
 cask "coteditor"
-cask "dash"
-cask "dropbox"
 cask "editaro"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono"
-cask "font-myrica"
-cask "font-ricty-diminished"
-cask "gimp"
 cask "gitkraken"
-cask "gitup"
 cask "google-chrome"
+cask "iina"
 cask "iterm2"
 cask "jetbrains-toolbox"
-cask "kindle"
 cask "malwarebytes"
 cask "mamp"
 cask "microsoft-office"
+cask "notion"
+cask "onyx"
 cask "parallels"
 cask "skitch"
-cask "slack"
 cask "steam"
 cask "virtualbox"
 cask "visual-studio-code"
 # cask "xrg"
 
-# mas "Amphetamine", id: 937984704
-# mas "Battery Monitor", id: 836505650
-# mas "Bear", id: 1091189122
-# mas "BetterSnapTool", id: 417375580
-# mas "HotKey", id: 975890633
-# mas "LINE", id: 539883307
-# mas "RunCat", id: 1429033973
-# mas "spark-メールアプリ-by-readdle", id: 1176895641
-# mas "The Unarchiver", id: 425424353
-# mas "Twitter", id: 1482454543
-# mas "Yoink", id: 457622435
+mas "Amphetamine", id: 937984704
+mas "Battery Monitor", id: 836505650
+mas "Bear", id: 1091189122
+mas "BetterSnapTool", id: 417375580
+mas "HotKey", id: 975890633
+mas "LINE", id: 539883307
+mas "RunCat", id: 1429033973
+mas "Spark", id: 1176895641
+mas "The Unarchiver", id: 425424353
+mas "Twitter", id: 1482454543
+mas "Yoink", id: 457622435
