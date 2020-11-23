@@ -1,11 +1,11 @@
 [user]
-	email = ryoyukikazu11@gmail.com
-	name = Sarada1101
+    email = ryoyukikazu11@gmail.com
+    name = Sarada1101
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	ui = true
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
 [pager]
     log = diff-highlight | less
     show = diff-highlight | less
