@@ -1,1 +1,3 @@
 export MANPATH=/usr/local/share/man/ja_JP.UTF-8:$(manpath)
+export PATH=~/.composer/vendor/bin:/Users/ryo/google-cloud-sdk/bin:/Users/ryo/.zinit/polaris/sbin:/Users/ryo/.zinit/polaris/bin:/Users/ryo/.zinit/polaris/usr/sbin:/Users/ryo/.zinit/polaris/usr/bin:/Users/ryo/.anyenv/envs/pyenv/shims:/Users/ryo/.anyenv/envs/pyenv/bin:/Users/ryo/.anyenv/envs/phpenv/shims:/Users/ryo/.anyenv/envs/phpenv/bin:/Users/ryo/.anyenv/envs/jenv/shims:/Users/ryo/.anyenv/envs/jenv/bin:/Users/ryo/.anyenv/bin:/Users/ryo/.nodebrew/current/bin:/usr/local/opt/sqlite/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
