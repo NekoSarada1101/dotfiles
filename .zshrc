@@ -117,7 +117,7 @@ eval "$(starship init zsh)"
 
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+eval "$(anyenv init - --no-rehash)"
 
 
 ########################################
