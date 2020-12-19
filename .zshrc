@@ -155,6 +155,7 @@ zinit light "zsh-users/zsh-completions"
 zinit light zsh-users/zsh-autosuggestions
 
 # シンタックスハイライト
+zinit ice wait'0'
 zinit light zdharma/fast-syntax-highlighting
 
 # anyframeのセットアップ
@@ -182,9 +183,11 @@ bindkey '^r' anyframe-widget-execute-history
 # zinit light 'mollifier/cd-gitroot'
 
 # コマンド入力途中で上下キー押したときの過去履歴がいい感じに出るようになる
+zinit ice wait'0'
 zinit light "zsh-users/zsh-history-substring-search"
 
 # 256色表示にする
+zinit ice wait'0'
 zinit light "zsh-users/zsh-completions"
 
 # prezto
