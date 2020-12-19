@@ -16,6 +16,10 @@
 # 環境変数
 export LANG=ja_JP.UTF-8
 
+# auto compile
+if [ ~/.zshrc -nt ~/.zshrc.zwc ]; then
+   zcompile ~/.zshrc
+fi
 
 # 色を使用出来るようにする
 autoload -Uz colors
