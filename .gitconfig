@@ -16,6 +16,7 @@
 [alias]
     d = "diff"
     co = "checkout"
+    cb = "checkout -b"
     ci = "commit"
     ca = "commit -a"
     ps = "push"
