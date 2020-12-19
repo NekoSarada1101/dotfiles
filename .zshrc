@@ -44,8 +44,8 @@ zstyle ':zle:*' word-style unspecified
 ########################################
 # 補完
 # 補完機能を有効にする
-autoload -Uz compinit
-compinit
+# autoload -Uz compinit
+# compinit
 
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -99,18 +99,18 @@ setopt hist_ignore_space
 setopt hist_reduce_blanks
 
 # 高機能なワイルドカード展開を使用する
-setopt extended_glob
+# setopt extended_glob
 
 # vim:set ft=zsh:
 
 ########################################
 # PATH
 # zsh-completions
-fpath=(path/to/zsh-completions/src $fpath)
+# fpath=(path/to/zsh-completions/src $fpath)
 
 export PATH=/usr/local/bin:$PATHexport PATH="/usr/local/opt/sqlite/bin:$PATH"
 
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+#  export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # starship
 eval "$(starship init zsh)"
@@ -123,6 +123,7 @@ eval "$(anyenv init -)"
 ########################################
 # zinit
 ### Added by Zinit's installer
+# 新規プラグインを追加した際に手動で zplug install && zplug load する必要があるので注意
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
     command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
@@ -171,14 +172,14 @@ bindkey '^r' anyframe-widget-execute-history
 
 # Ctrl+b
 # peco でGitブランチを表示して切替え
-bindkey '^b' anyframe-widget-checkout-git-branch
+# bindkey '^b' anyframe-widget-checkout-git-branch
 
 # Gitの変更状態がわかる ls。ls の代わりにコマンド `k` を実行するだけ。
-zinit light supercrabtree/k
+# zinit light supercrabtree/k
 
 # 作業中のGitのルートディレクトリまでジャンプするコマンドを定義するプラグインです。
 # cd-gitroot コマンドをエイリアスで U に割り当てています。
-zinit light 'mollifier/cd-gitroot'
+# zinit light 'mollifier/cd-gitroot'
 
 # コマンド入力途中で上下キー押したときの過去履歴がいい感じに出るようになる
 zinit light "zsh-users/zsh-history-substring-search"
@@ -200,6 +201,11 @@ if [ -f '/Users/ryo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ryo/google-
 if [ -f '/Users/ryo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ryo/google-cloud-sdk/completion.zsh.inc'; fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# zsh-git-escape-magic
+# fpath=(~/.functions ${fpath})
+# autoload -Uz git-escape-magic
+# git-escape-magic
 
 ########################################
 # エイリアス
