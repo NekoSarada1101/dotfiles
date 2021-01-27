@@ -26,6 +26,8 @@
     ba = "branch -a"
     bm = "branch --merged"
     bn = "branch --no-merged"
+    uis = "update-index --skip-worktree"
+    uins = "update-index --no-skip-worktree"
 [pager]
     log = diff-highlight | less
     show = diff-highlight | less
