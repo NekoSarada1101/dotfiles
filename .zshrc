@@ -247,6 +247,9 @@ alias mv='mv -i'
 # lazygit
 alias lg='lazygit'
 
+# venv
+alias mkvenv='python -m venv venv'
+
 # 普段は使わない
 # alias sl='sl'
 
