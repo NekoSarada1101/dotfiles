@@ -48,5 +48,9 @@
     process = git-lfs filter-process
     required = true
 [secrets]
-	patterns = private_key
-	patterns = private_key_id
+    patterns = private_key
+    patterns = private_key_id
+    patterns = https://hooks.slack.com
+    patterns = gmail.com
+[init]
+	templatedir = ~/.git-templates/git-secrets
